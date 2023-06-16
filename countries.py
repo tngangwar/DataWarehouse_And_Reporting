@@ -13,7 +13,7 @@ def insertIntoCountries(df, tableName, job_run_id):
 
     df = pd.read_csv(f"{tableName}.csv") 
     df.fillna("", inplace=True)
-
+#for loop for checking the condition
     for index, row in df.iterrows():
         # print(type(row["8"]), row["8"])
         rows_processed += 1
